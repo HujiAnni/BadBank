@@ -1,16 +1,15 @@
 import React from "react";
 import { UserContext } from "..";
 import Table from "react-bootstrap/Table";
-
+import Card from "./context";
 function AllData() {
   const ctx = React.useContext(UserContext);
   const profiles = [...ctx.users];
 
   return (
     <>
-      <h3>All Data Stored</h3>
       <br />
-      <div className="container" style={{ maxWidth: "90%" }}>
+      <div className="container" style={{ maxWidth: "75%" }}>
         <Table striped bordered hover responsive variant="dark">
           <thead>
             <tr>

@@ -69,11 +69,11 @@ function Withdraw() {
 
   return (
     <>
-      <h3>Withdraw</h3>
       <br />
       <Card
         bgcolor="info"
         status={status}
+        header="Withdraw"
         body={
           show ? (
             <>
@@ -84,14 +84,12 @@ function Withdraw() {
                   justifyContent: "space-between",
                 }}
               >
-                <h5>Balance:</h5>
-                <h5 style={{ textAlign: "right" }}>
-                  ${parseFloat(ctx.users[0].balance).toFixed(2)}
-                </h5>
+                <h6>Balance:</h6>
+                <h6>${parseFloat(ctx.users[0].balance).toFixed(2)}</h6>
               </div>
 
               <br />
-              <h5>Withdraw Amount</h5>
+              <h6 style={{ textAlign: "start" }}>Withdraw Amount</h6>
               <input
                 type="text"
                 className="form-control"
@@ -120,9 +118,9 @@ function Withdraw() {
           ) : (
             <>
               <h5>Success</h5>
-              <h5>
+              <h6>
                 New Balance: ${parseFloat(ctx.users[0].balance).toFixed(2)}
-              </h5>
+              </h6>
               <br />
               <Button
                 type="submit"

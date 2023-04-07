@@ -6,7 +6,7 @@ function Home() {
     <Context
       txtcolor="black"
       style={{ border: "none", maxWidth: "24rem" }}
-      title="WELCOME TO THE BANK"
+      header="WELCOME TO THE BANK"
       text="For all your banking needs"
       img={bankimg}
     ></Context>

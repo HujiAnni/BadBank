@@ -8,16 +8,23 @@ function Card(props) {
   }
 
   return (
-    <div
-      className={classes()}
-      style={{ maxWidth: "24rem", maxHeight: "28rem" }}
-    >
-      {/* <div className="card-header">{props.header}</div> */}
-      <div className="card-body" style={{ justifyContent: "center" }}>
+    <div className={classes()} style={{ maxWidth: "24rem" }}>
+      <div
+        className="card-header"
+        style={{ fontSize: "large", fontWeight: "bolder" }}
+      >
+        {props.header}
+      </div>
+      <div className="card-body">
         {props.title && <h5 className="card-title">{props.title}</h5>}
         {props.text && <p className="card-text">{props.text}</p>}
         {props.body}
-        {props.img && <img src={props.img} alt="Dynamic Image" />}
+        <div style={{ textAlign: "center" }}>
+          {props.img && (
+            <img src={props.img} alt="responsive image" className="img-fluid" />
+          )}
+        </div>
+
         {props.status && <div id="createStatus">{props.status}</div>}
       </div>
     </div>

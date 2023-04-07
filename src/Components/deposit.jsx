@@ -72,11 +72,11 @@ function Deposit() {
 
   return (
     <>
-      <h3>Deposit</h3>
       <br />
       <Card
         bgcolor="primary"
         status={status}
+        header="Deposit"
         body={
           show ? (
             <>
@@ -87,14 +87,12 @@ function Deposit() {
                   justifyContent: "space-between",
                 }}
               >
-                <h5>Balance:</h5>
-                <h5 style={{ textAlign: "right" }}>
-                  ${parseFloat(ctx.users[0].balance).toFixed(2)}
-                </h5>
+                <h6>Balance:</h6>
+                <h6>${parseFloat(ctx.users[0].balance).toFixed(2)}</h6>
               </div>
 
               <br />
-              <h5>Deposit Amount</h5>
+              <h6 style={{ textAlign: "start" }}>Deposit Amount</h6>
               <input
                 type="text"
                 className="form-control"
@@ -123,9 +121,9 @@ function Deposit() {
           ) : (
             <>
               <h5>Success</h5>
-              <h5>
+              <h6>
                 New Balance: ${parseFloat(ctx.users[0].balance).toFixed(2)}
-              </h5>
+              </h6>
               <br />
               <Button
                 type="submit"

@@ -55,18 +55,15 @@ function CreateAccount() {
 
   return (
     <>
-      <br />
-
       <Card
         bgcolor="dark"
         txtcolor="white"
         status={status}
-        title="Create Account"
+        header="Create Account"
         body={
           show ? (
             <>
-              <br />
-              <h5 style={{ textAlign: "start" }}>Name</h5>
+              <h5>Name</h5>
               <input
                 type="input"
                 className="form-control"
