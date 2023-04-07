@@ -21,6 +21,7 @@ function Withdraw() {
 
     if (parseFloat(field) <= 0) {
       setStatus("Please enter a positive number to withdraw.");
+      alert("Deposit amount cannot be a negative number or zero.");
       setTimeout(() => setStatus(""), 3000);
       return false;
     }

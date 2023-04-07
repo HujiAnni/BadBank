@@ -27,7 +27,7 @@ function Deposit() {
 
     if (parseFloat(field) <= 0) {
       setStatus("Please enter a positive number to deposit.");
-      alert("Deposit amount cannot be a negative number.");
+      alert("Deposit amount cannot be a negative number or zero.");
       setTimeout(() => setStatus(""), 3000);
       return false;
     }
