@@ -55,11 +55,13 @@ function CreateAccount() {
 
   return (
     <>
-      <h3>Create Account</h3>
       <br />
+
       <Card
         bgcolor="dark"
+        txtcolor="white"
         status={status}
+        title="Create Account"
         body={
           show ? (
             <>

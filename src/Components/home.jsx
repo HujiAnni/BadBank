@@ -1,15 +1,15 @@
-import Card from "./context";
 import bankimg from "../bank.png";
+import Context from "./context";
 
 function Home() {
   return (
-    <Card
+    <Context
       txtcolor="black"
-      // header="BAD BANK"
+      style={{ border: "none", maxWidth: "24rem" }}
       title="WELCOME TO THE BANK"
       text="For all your banking needs"
       img={bankimg}
-    />
+    ></Context>
   );
 }
 
