@@ -1,5 +1,5 @@
 import Card from "./context";
-import React, { useEffect } from "react";
+import React from "react";
 import { UserContext } from "..";
 import Button from "react-bootstrap/Button";
 
