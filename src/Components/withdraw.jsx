@@ -26,6 +26,9 @@ function Withdraw() {
     }
     if (parseFloat(field) > total) {
       setStatus("No sufficient amount. Please try again.");
+      alert(
+        "Transaction failed. Your withdrawal is higher than the account balance."
+      );
       setTimeout(() => setStatus(""), 3000);
       return false;
     }

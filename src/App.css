@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+#home_brand {
+  color: #daf5ff;
+}
+
+#home_brand:hover {
+  color: white;
+  font-weight: bolder;
+}
+
+.nav_item:hover {
+  color: white;
+  font-weight: bolder;
+}
